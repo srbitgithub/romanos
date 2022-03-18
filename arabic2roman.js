@@ -1,4 +1,4 @@
-function Romanos() {
+function Arabic2Roman() {
     this.Main = function (myNumber){
         if (myNumber == null) return ''
         if (myNumber < 1) return ''
@@ -51,4 +51,4 @@ function Romanos() {
         return unitsValue;
     }
 }
-module.exports = Romanos
+module.exports = Arabic2Roman
