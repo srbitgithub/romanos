@@ -7,7 +7,11 @@ function Arabic2Roman() {
         if (myNumber > 39 && myNumber < 50) return this.Fourty(myNumber)
         if (myNumber > 49 && myNumber < 90) return this.Fifty(myNumber)
         if (myNumber > 89 && myNumber < 100) return this.Ninety(myNumber)
-        if (myNumber > 99) return this.Hundred(myNumber)
+        if (myNumber > 99 && myNumber < 400) return this.Hundred(myNumber)
+        if (myNumber > 399 && myNumber < 500) return this.FourHundred(myNumber)
+        if (myNumber > 499 && myNumber < 900) return this.FiveHundred(myNumber)
+        if (myNumber > 899 && myNumber < 1000) return this.NineHundred(myNumber)
+        if (myNumber > 999) return this.OneThousand(myNumber)
     }
 
     this.Units = function (number){
@@ -36,6 +40,22 @@ function Arabic2Roman() {
 
     this.Hundred = function (number){
         return 'C' + this.Main(number - 100)
+    }
+
+    this.FourHundred = function (number){
+        return 'CD' + this.Main(number - 400)
+    }
+
+    this.FiveHundred = function (number){
+        return 'D' + this.Main(number - 500)
+    }
+
+    this.NineHundred = function (number){
+        return 'CM' + this.Main(number - 900)
+    }
+    
+    this.OneThousand = function (number){
+        return 'M' + this.Main(number - 1000)
     }
 
     this.nearFive = function (number){
