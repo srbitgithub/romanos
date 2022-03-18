@@ -925,5 +925,4 @@ describe ('Convertir número arábigos a arabic2roman || del MC al MMM', () => {
         const result = arabic2roman.Main(3000)
         expect (result).toBe('MMM')
     })
-
 })
