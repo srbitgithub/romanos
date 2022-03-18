@@ -1,9 +1,21 @@
 const {it, expect} = require('@jest/globals')
+
 const Arabic2Roman = require('./arabic2roman')
+const Roman2Arabic = require('./roman2arabic')
 
 const arabic2roman = new Arabic2Roman()
+const roman2arabic = new Roman2Arabic()
 
-describe ('Convertir número arábigos a romanos || Unidades', () => {
+describe ('Convertir número romanos a arábigos || Unidades', () => {
+
+    it ('Si el número es `` devuelve null', () => {
+        const result = roman2arabic.Main('')
+        expect (result).toBe(null)
+    })
+})
+
+
+/*describe ('Convertir número arábigos a romanos || Unidades', () => {
 
     it ('Si el número es null devuelve ``', () => {
         const result = arabic2roman.Main(null)
@@ -925,4 +937,4 @@ describe ('Convertir número arábigos a arabic2roman || del MC al MMM', () => {
         const result = arabic2roman.Main(3000)
         expect (result).toBe('MMM')
     })
-})
+})*/
