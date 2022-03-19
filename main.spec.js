@@ -195,7 +195,7 @@ describe ('Convertir número romanos a arábigos || Unidades', () => {
 })
 
 
-/*describe ('Convertir número arábigos a romanos || Unidades', () => {
+describe ('Convertir número arábigos a romanos || Unidades', () => {
 
     it ('Si el número es null devuelve ``', () => {
         const result = arabic2roman.Main(null)
@@ -1117,4 +1117,4 @@ describe ('Convertir número arábigos a arabic2roman || del MC al MMM', () => {
         const result = arabic2roman.Main(3000)
         expect (result).toBe('MMM')
     })
-})*/
+})
