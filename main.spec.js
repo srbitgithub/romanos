@@ -12,6 +12,186 @@ describe ('Convertir número romanos a arábigos || Unidades', () => {
         const result = roman2arabic.Main('')
         expect (result).toBe(null)
     })
+
+    it ('Si el número es I devuelve 1', () => {
+        const result = roman2arabic.Main('I')
+        expect (result).toBe(1)
+    })
+
+    it ('Si el número es II devuelve 2', () => {
+        const result = roman2arabic.Main('II')
+        expect (result).toBe(2)
+    })
+
+    it ('Si el número es III devuelve 3', () => {
+        const result = roman2arabic.Main('III')
+        expect (result).toBe(3)
+    })
+
+    it ('Si el número es IV devuelve 4', () => {
+        const result = roman2arabic.Main('IV')
+        expect (result).toBe(4)
+    })
+
+    it ('Si el número es V devuelve 5', () => {
+        const result = roman2arabic.Main('V')
+        expect (result).toBe(5)
+    })
+
+    it ('Si el número es VI devuelve 6', () => {
+        const result = roman2arabic.Main('VI')
+        expect (result).toBe(6)
+    })
+
+    it ('Si el número es VII devuelve 7', () => {
+        const result = roman2arabic.Main('VII')
+        expect (result).toBe(7)
+    })
+
+    it ('Si el número es VIII devuelve 8', () => {
+        const result = roman2arabic.Main('VIII')
+        expect (result).toBe(8)
+    })
+
+    it ('Si el número es IX devuelve 9', () => {
+        const result = roman2arabic.Main('IX')
+        expect (result).toBe(9)
+    })
+
+    it ('Si el número es X devuelve 10', () => {
+        const result = roman2arabic.Main('X')
+        expect (result).toBe(10)
+    })
+
+    it ('Si el número es XI devuelve 11', () => {
+        const result = roman2arabic.Main('XI')
+        expect (result).toBe(11)
+    })
+
+    it ('Si el número es XIV devuelve 14', () => {
+        const result = roman2arabic.Main('XIV')
+        expect (result).toBe(14)
+    })
+
+    it ('Si el número es XVII devuelve 17', () => {
+        const result = roman2arabic.Main('XVII')
+        expect (result).toBe(17)
+    })
+
+    it ('Si el número es IXX devuelve 19', () => {
+        const result = roman2arabic.Main('IXX')
+        expect (result).toBe(19)
+    })
+
+    it ('Si el número es XXX devuelve 30', () => {
+        const result = roman2arabic.Main('XXX')
+        expect (result).toBe(30)
+    })
+
+    it ('Si el número es XLV devuelve 45', () => {
+        const result = roman2arabic.Main('XLV')
+        expect (result).toBe(45)
+    })
+
+    it ('Si el número es IL devuelve 49', () => {
+        const result = roman2arabic.Main('IL')
+        expect (result).toBe(49)
+    })
+
+    it ('Si el número es L devuelve 50', () => {
+        const result = roman2arabic.Main('L')
+        expect (result).toBe(50)
+    })
+
+    it ('Si el número es XC devuelve 90', () => {
+        const result = roman2arabic.Main('XC')
+        expect (result).toBe(90)
+    })
+
+    it ('Si el número es C devuelve 100', () => {
+        const result = roman2arabic.Main('C')
+        expect (result).toBe(100)
+    })
+
+    it ('Si el número es CXXVIII devuelve 128', () => {
+        const result = roman2arabic.Main('CXXVIII')
+        expect (result).toBe(128)
+    })
+
+    it ('Si el número es CDXXXIX devuelve 439', () => {
+        const result = roman2arabic.Main('CDXXXIX')
+        expect (result).toBe(439)
+    })
+
+    it ('Si el número es D devuelve 500', () => {
+        const result = roman2arabic.Main('D')
+        expect (result).toBe(500)
+    })
+
+    it ('Si el número es CMXCIII devuelve 993', () => {
+        const result = roman2arabic.Main('CMXCIII')
+        expect (result).toBe(993)
+    })
+
+    it ('Si el número es IM devuelve 999', () => {
+        const result = roman2arabic.Main('IM')
+        expect (result).toBe(999)
+    })
+
+    it ('Si el número es M devuelve 1000', () => {
+        const result = roman2arabic.Main('M')
+        expect (result).toBe(1000)
+    })
+
+    it ('Si el número es MXC devuelve 1090', () => {
+        const result = roman2arabic.Main('MXC')
+        expect (result).toBe(1090)
+    })
+
+    it ('Si el número es MXCV devuelve 1095', () => {
+        const result = roman2arabic.Main('MXCV')
+        expect (result).toBe(1095)
+    })
+
+    it ('Si el número es MCMLXXIII devuelve 1973', () => {
+        const result = roman2arabic.Main('MCMLXXIII')
+        expect (result).toBe(1973)
+    })
+
+    it ('Si el número es MCMLXXVI devuelve 1976', () => {
+        const result = roman2arabic.Main('MCMLXXVI')
+        expect (result).toBe(1976)
+    })
+
+    it ('Si el número es MMV devuelve 2005', () => {
+        const result = roman2arabic.Main('MMV')
+        expect (result).toBe(2005)
+    })
+    
+    it ('Si el número es MMVIII devuelve 2008', () => {
+        const result = roman2arabic.Main('MMVIII')
+        expect (result).toBe(2008)
+    })
+
+    it ('Si el número es MMXCV devuelve 2095', () => {
+        const result = roman2arabic.Main('MMXCV')
+        expect (result).toBe(2095)
+    })
+
+    it ('Si el número es MMDXXXVII devuelve 2537', () => {
+        const result = roman2arabic.Main('MMDXXXVII')
+        expect (result).toBe(2537)
+    })
+
+    it ('Si el número es MMM devuelve 3000', () => {
+        const result = roman2arabic.Main('MMM')
+        expect (result).toBe(3000)
+    })
+
+    it ('Si el número es MMMCMXCIX devuelve 3999', () => {
+        const result = roman2arabic.Main('MMMCMXCIX')
+        expect (result).toBe(3999)
+    })
 })
 
 
