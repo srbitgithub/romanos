@@ -6,17 +6,17 @@ const Roman2Arabic = require('./roman2arabic')
 const arabic2roman = new Arabic2Roman()
 const roman2arabic = new Roman2Arabic()
 
-describe ('Convertir número romanos a arábigos || Unidades', () => {
+    describe ('Convertir número romanos a arábigos || Unidades', () => {
 
-    it ('Si el número es `` devuelve null', () => {
-        const result = roman2arabic.Main('')
-        expect (result).toBe(null)
-    })
+        it ('Si el número es `` devuelve null', () => {
+            const result = roman2arabic.Main('')
+            expect (result).toBe(null)
+        })
 
-    it ('Si el número es I devuelve 1', () => {
-        const result = roman2arabic.Main('I')
-        expect (result).toBe(1)
-    })
+        it ('Si el número es I devuelve 1', () => {
+            const result = roman2arabic.Main('I')
+            expect (result).toBe(1)
+        })
 
     it ('Si el número es II devuelve 2', () => {
         const result = roman2arabic.Main('II')
